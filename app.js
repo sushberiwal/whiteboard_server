@@ -26,6 +26,10 @@ io.on('connection', function(socket){
 });
 
 
+app.get("/" , function(req,res){
+  res.end("Welcome to main Page")
+})
+
 let port = process.env.PORT || 3000;
 http.listen(port , function(){
   console.log('listening on 3000 port');
